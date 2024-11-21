@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fit Nest</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+
+
+<header>
+    <img class="menubarimage" src="menubar.png" alt="menu bar">
+    <nav class="custom-nav">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <img class="loginimage" src="loginimage.png" alt="Website Icon" onclick="openLoginPopup()">
+ 
+</header>
+
+<img class="center-image" src="fitnest.png" alt="Center Image" onclick="navigateToHome()">
+<h4>EST 2024</h4>
+  
+<div class="center-button">
+    <button class="newregisterbutton" onclick="openPopup()">New Registration</button>
+</div>
+
+<!-- Pop-up registration form -->
+<div class="popup-container" id="registrationPopup">
+    <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <h1>Welcome Gymrats!</h1>
+        <form id="registrationForm" action="http://localhost:3006/register" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter name" name="name" autocomplete="on" required><br>
+
+            <label for="contact">Contact:</label>
+            <input type="text" id="contact" placeholder="Enter contact" name="contact" autocomplete="on" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter email" name="email" autocomplete="on" required><br>
+
+            <label for="username">Create Username:</label>
+            <input type="text" id="username" placeholder="Enter username" name="username" autocomplete="on" required><br>
+
+            <label for="password">Create Password:</label>
+            <input type="password" id="password" placeholder="Enter password" name="password" autocomplete="on" required>
+
+            <p>You agree to our <u>terms and conditions</u></p>
+            
+            <button type="submit" onclick="success()" id="rs">Register</button> 
+            
+        </form>
+    </div>
+</div>
+
+
+<!-- Pop-up login form -->
+<div class="popup-container" id="loginPopup">
+    <div class="popup-content">
+        <span class="close-btn" onclick="closeLoginPopup()">&times;</span>
+        <h2>Sweat it out!</h2>
+        <form id="memberloginForm" action="http://localhost:3006/login" method="post">
+            
+            <label for="loginusername">Username:</label>
+            <input type="text" id="loginusername" placeholder="Enter username" name="loginusername" autocomplete="on" required><br>
+
+            <label for="loginpassword">Password:</label>
+            <input type="password" id="loginpassword" placeholder="Enter password" name="loginpassword" autocomplete="on" required>
+
+            <button type="submit" id="loginButton">Login</button>
+        </form>
+    </div>
+</div>
+
+
+<footer>
+    <br>
+    <a href="https://www.instagram.com/prajeeta_10/" target="_blank"><img class="facebookimage" src="facebookimage.png" alt="facebook Image"></a>
+    <a href="https://www.instagram.com/prajeeta_10/" target="_blank"><img class="instaimage" src="instaimage.png" alt="insta img"></a>
+    <a href="https://www.instagram.com/prajeeta_10/" target="_blank"><img class="twitterimage" src="twitterimage.png" alt="twitter Image"></a>
+    <br>
+</footer>
+
+<script src="test.js"></script>
+
+</body>
+</html>

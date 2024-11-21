@@ -1,0 +1,358 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-size: cover; 
+  background-position: center center; 
+  background-repeat: no-repeat;
+  
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url('gym6.jpg'); 
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 0.92; 
+  z-index: -1;
+}
+
+header {
+  
+  color: #ffffff;
+  padding: 18px;
+  text-align: center;
+  backdrop-filter: blur(7.7px);
+
+}
+
+.menubarimage {
+  width: 40px;
+  height: auto;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.menubarimage:hover {
+  background-color: #ffffff; 
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.loginimage {
+  width: 30px;
+  height: auto;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);  
+}
+.loginimage:hover {
+  background-color: #ffffff; 
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.facebookimage {
+  width: 30px;
+  height: auto;
+  position: absolute;
+  left: center;
+  top: 50%;
+  transform: translateY(-50%);
+}  
+.facebookimage:hover {
+  background-color: #ffffff; 
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.instaimage {
+  width: 30px;
+  height: auto;
+  position: absolute;
+  left: 45%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.instaimage:hover {
+  background-color: #ffffff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.twitterimage { 
+  width: 30px;
+  height: auto;
+  position: absolute;
+  left: 55%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.twitterimage:hover {
+  background-color: #ffffff; 
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+nav ul {
+  color: white;
+  font-weight: 100;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+font-weight: 100;
+display: inline;
+font-family: 'Courier New', Courier, monospace;
+margin-right: 20px;
+color: white; /* Set the color to white */
+font-size: 25px; /* Set the font size to your desired size */
+}
+
+nav ul li a {
+  position: relative;
+  color: #ffffff;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #000000; /* Change to your desired hover color */
+}
+
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #000000; /* Change to your desired hover underline color */
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+nav ul li a:hover::after {
+  transform: scaleX(1);
+}
+
+/*...*/
+nav a {
+  font-weight: 100;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+.center-image {
+  width: 300px;
+  height: auto;
+  display: block;
+  margin: 20px auto; 
+  cursor: pointer;
+  margin-left: 250px;
+}
+
+.center-button {
+  text-align: center;
+  margin-top: 20px; /* Adjust the margin as needed */
+  margin-right: 740px;
+}
+
+
+.newregisterbutton {
+  background-color: #3f413f; 
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  padding: 15px 20px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+ 
+}
+
+
+
+.newregisterbutton:hover {
+  background-color: #878383;
+}
+
+
+footer {
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  backdrop-filter: blur(7.7px);
+}
+
+@media (max-width: 600px) {
+  /* Add responsive styles here */
+  .menubarimage, .loginimage, .facebookimage, .instaimage, .twitterimage {
+      position: static;
+      transform: none;
+      display: block;
+      margin: 10px auto;
+  }
+
+  header {
+      padding: 10px;
+  }
+}
+
+
+/* Your existing CSS */
+
+/* Pop-up styles */
+.popup-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #9c9797;
+  background-blend-mode: lighten ;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  background: transparent;
+}
+
+.popup-content {
+  background: #777575;
+  font-weight: bold;
+  padding: 20px;
+  border-radius: 15px;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+  border-style: double;
+  border-width: 5px;
+  border-color: #3f413f;
+  background: transparent;
+  backdrop-filter: blur(15px);
+}
+
+#registrationPopup .close-btn {
+  position: absolute;
+  top: 5px;
+  right: 30px;
+  cursor: pointer;
+  font-size: 50px;
+  font-weight: bolder;
+  color: #000000;
+}
+
+
+h4 {
+  color: black;
+  font-family: 'Courier New', Courier, monospace;
+  margin-left: 360px;
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+  text-align: left;
+  color: black;
+}
+
+input {
+  width: 90%;
+  padding: 5px;
+  margin-bottom: 15px;
+  border: 2px solid #777575;
+  border-radius: 5px;
+  color: black;
+}
+
+button {
+  background-color: #3f413f;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #585a58;
+  cursor:pointer;
+}
+
+#rs:hover {
+  background-color: #878383;
+  cursor: pointer;
+}
+
+
+/* Login form styles */
+#loginPopup .popup-content {
+  background: #777575;
+  font-weight: bold;
+  padding: 20px;
+  border-radius: 15px;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+  background: transparent;
+  backdrop-filter: blur(15px);
+}
+
+#loginPopup .close-btn{
+  position: absolute;
+  top: 5px;
+  right: 30px;
+  cursor: pointer;
+  font-size: 50px;
+  font-weight: bolder;
+  color: #000000;
+}
+
+.popup-content {
+  position: relative;
+}
+
+/* Add this snippet at the end of your existing CSS file */
+
+main {
+  position: relative;
+  z-index: 1;
+}
+
+.scroll-section {
+  padding: 50px 0; /* Adjust padding as needed */
+  opacity: 0;
+  transform: translateY(20%);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.scroll-section.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+

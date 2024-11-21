@@ -1,0 +1,188 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('gym7.jpg'); 
+}
+
+header {
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    background: transparent;
+    backdrop-filter: blur(10px);
+}
+
+.menubarimage {
+    width: 40px;
+    height: auto;
+    position: absolute;
+    left: 10px;
+    top: 25px;
+    transform: translateY(-50%);
+  }
+  .menubarimage:hover { 
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  .exitimage {
+    width: 30px;
+    height: auto;
+    position: absolute;
+    right: 10px;
+    top: 25px;
+    transform: translateY(-50%);  
+  }
+  .exitimage:hover {
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  .facebookimage {
+    width: 30px;
+    height: auto;
+    position: absolute;
+    left: 670px;
+    top: 50%;
+    transform: translateY(-50%);
+  }  
+  .facebookimage:hover {
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .instaimage {
+    width: 30px;
+    height: auto;
+    position: absolute;
+    left: 620px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .instaimage:hover {
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .twitterimage { 
+    width: 30px;
+    height: auto;
+    position: absolute;
+    left: 720px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .twitterimage:hover { 
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  nav ul {
+    color: white;
+    font-weight: 100;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+
+  nav ul li {
+    font-weight: 100;
+    display: inline;
+    font-family: 'Courier New', Courier, monospace;
+    margin-right: 20px;
+    color: white; /* Set the color to white */
+    font-size: 25px; /* Set the font size to your desired size */
+    }
+    
+    nav ul li a {
+      position: relative;
+      color: #ffffff;
+      font-size: 20px;
+      transition: color 0.3s ease;
+    }
+    
+    nav ul li a:hover {
+      color: #000000; /* Change to your desired hover color */
+    }
+    
+    nav ul li a::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #000000; /* Change to your desired hover underline color */
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+    }
+    
+    nav ul li a:hover::after {
+      transform: scaleX(1);
+    }
+nav a {
+  font-weight: 100;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 25px; /* Set the font size to your desired size */
+}
+
+.custom-nav {
+  color: white;
+  font-size: 20px;
+}
+
+  
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #4e4d4d;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: transparent;
+    backdrop-filter: blur(10px);
+
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h1, h2 {
+    color: #1f1e1e;
+    text-align: center;
+}
+
+.member-details, .class-info, .attendance, .payment-details, .tips {
+    background: transparent;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(50px);
+    border-style: double;
+}
+
+.member-details p, .class-info p, .attendance p, .payment-details p, .tips p {
+    margin: 10px 0;
+}
+
+footer {
+    background: transparent;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    backdrop-filter: blur(10px);
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 10px;
+    }
+}
